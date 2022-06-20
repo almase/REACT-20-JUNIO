@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI PRIMERA APLICACION REACT</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+</head>
+<body>
+    <h1>APLICACION REACT INICIAL</h1>
+
+    <div id="principal">
+
+    </div>
+    
+    <script>
+       //Modo no declararativo --> SIN JSX
+       //Importo librerías de REACT
+       
+       //Elemento/Componente a renderizar en JSX
+       //Siempre un elemento contnedor
+       /*       const elemento=<div>
+                                     <h2 >Esto es un elemento de REACT</h2>  
+                                     <h3>Esto es otra prueba</h3>;
+                               </div>*/
+
+        const elemento=React.createElement('h2',{}, 'Este es un elemento de REACT');
+
+       //Contenedor donde quiere renderizarlo
+       const contenedor=ReactDOM.createRoot(document.getElementById("principal"));
+
+       //Renderizo el elemento dentro del contenedor
+       contenedor.render(elemento);
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
