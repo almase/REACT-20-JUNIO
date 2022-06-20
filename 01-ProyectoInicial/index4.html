@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <h1>CREAR UN COMPONENTE</h1>
+    <div   id="root">  VALOR ORIGINAL   </div>
+
+    <script type="text/babel">
+        //Mi primer componente funcional
+        function DatosPersonales(){
+          return (
+                <div >
+                    <p>nombre: Alberto</p>
+                    <p>Edad: 60</p>
+                    <p>Trabajo: profesor </p>
+                    <DatosPersonales1 />
+                </div>
+          )
+        }
+
+        //Arrow Functions
+        const DatosPersonales1=()=>{
+            return (
+                <div>
+                    <p>nombre: Rosa</p>
+                    <p>Edad: 61</p>
+                    <p>Trabajo: profesor </p>
+                   
+                </div>
+          )
+        }
+
+        const contenedor=ReactDOM.createRoot(document.getElementById("root"));
+        contenedor.render(<DatosPersonales />);
+    
+    </script>
+
+
+</body>
+</html>

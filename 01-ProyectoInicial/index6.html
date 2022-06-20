@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <h1> VER MI NOMBRE Y APELLIDOS</h1>
+
+    <div id="principal"></div>
+
+    <script type="text/babel">
+
+        function ElePrincipal() {
+            return (
+                <div>
+                    <label>nombre   </label>
+                    <input type="text" name="nombre" />
+                    <br />
+                    <label>apellidos</label>
+                    <input type="text" name="apellidos" />
+                    <EleBarra />
+                </div>);
+
+        };
+        //Con funcion de tipo Arrow
+        const EleBarra = () => {
+            return (
+                <div>
+                    <br />
+                    <input type="button" value="OK" />
+                    <input type="button" value="Cancel" />
+                </div>);
+        }
+        //Componente con clase
+        /*class EleBarra extends React.Component{       
+          render(){
+             return (
+                 <div>
+                     <br/>
+                     <input type="button" value="OK"/>
+                     <input type="button" value="Cancel"/>
+             </div>);
+         }
+         };*/
+
+        //Trabajar con DOM (Virtual DOM)
+        const principal = ReactDOM.createRoot(document.getElementById("principal"));
+        principal.render(<ElePrincipal />);
+
+
+    </script>
+
+</body>
+
+</html>
