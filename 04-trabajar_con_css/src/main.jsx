@@ -6,6 +6,7 @@ import Cabecera from './Componentes/Cabecera'
 import Navegacion from './Componentes/Navegacion'
 import Seccion from './Componentes/Seccion'
 import './index.css'
+import readTextFile from '../src/Libreria/ficheros'
 
 
 //Cabecera
@@ -20,8 +21,9 @@ ReactDOM.createRoot(document.getElementById('enlaces')).render(
 
 
 //Lateral Aside
+
 ReactDOM.createRoot(document.getElementById('lateral')).render(
-  <Aside />
+  <Aside texto={ "dfsdfsffd"}/>
 )
 
 //Seccion

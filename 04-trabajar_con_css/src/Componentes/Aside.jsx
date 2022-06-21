@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Aside() {
+function Aside({texto}) {
   return (
     <>
        <h3>Esto es un lateral</h3>
-       <p>fkfjlksdjflk dsalkfjk skfljsdljf kdsj jf ffsdfsdaf dsfdsf dsafdsaf dsafdsafdsfdsfsf</p>
+       <p>{ texto }</p>
     
     </>
   )
