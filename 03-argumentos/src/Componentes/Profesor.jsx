@@ -1,11 +1,14 @@
 import React from 'react'
 
-function Profesor() {
+function Profesor(props) {
+    //He usado Fragment
+   
     return (
         <>
-            <p>Nombre: Alberto</p>
-            <p>Apeliidos: XXXXXXXX</p>
-            <p>edad: 90</p>
+            <p>Nombre: { props.nombre } </p>
+            <p>Apellidos: {props.apellidos} </p>
+            <p>edad: {props.edad} </p>
+            <p>Salario neto {}</p>
         </>
     )
 }

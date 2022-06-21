@@ -1,0 +1,3 @@
+1-Pasar al componente Profesor salario e IRPF  
+  Calculamos el salario neto dentro del componente
+  Pintamos todo
