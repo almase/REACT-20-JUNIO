@@ -8,7 +8,9 @@ function Profesor(props) {
             <p>Nombre: { props.nombre } </p>
             <p>Apellidos: {props.apellidos} </p>
             <p>edad: {props.edad} </p>
-            <p>Salario neto {}</p>
+            <p>Salario: {props.salario}</p>
+            <p>IRPF: {props.irpf}</p>
+            <p>Salario neto { props.salario-(props.salario*props.irpf/100) }</p>
         </>
     )
 }
