@@ -4,6 +4,7 @@ import App from './App'
 import Aside from './Componentes/Aside'
 import Cabecera from './Componentes/Cabecera'
 import Navegacion from './Componentes/Navegacion'
+import Seccion from './Componentes/Seccion'
 import './index.css'
 
 
@@ -21,4 +22,9 @@ ReactDOM.createRoot(document.getElementById('enlaces')).render(
 //Lateral Aside
 ReactDOM.createRoot(document.getElementById('lateral')).render(
   <Aside />
+)
+
+//Seccion
+ReactDOM.createRoot(document.getElementById('seccion')).render(
+  <Seccion />
 )
