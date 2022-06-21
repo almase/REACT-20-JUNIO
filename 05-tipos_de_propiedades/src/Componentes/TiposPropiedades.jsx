@@ -2,10 +2,10 @@ import React from 'react'
 //importamos PropTypes
 import PropTypes from 'prop-types'
 
-function TiposPropiedades({ nombre, edad, salario, casado }) {
+function TiposPropiedades({ nombre, edad, salario=900, casado }) {
   return (
     <>
-      <h2>  { nombre}  {edad/10}  {salario} {(casado)?"Casado":"soltero"}</h2>
+      <h2>  { nombre}  {edad}  {salario} {(casado)?"Casado":"soltero"}</h2>
     </>
   )
 }
@@ -15,6 +15,11 @@ TiposPropiedades.propTypes={
    edad: PropTypes.number,
    salario: PropTypes.number,
    casado: PropTypes.bool
+}
+
+TiposPropiedades.defaultProps={
+    edad: 18,
+    nombre: "Sin nombre"
 }
 
 export default TiposPropiedades
