@@ -4,7 +4,7 @@ import Profesor from './Componentes/Profesor'
 
 function App() {
   return(
-  <Profesor />
+  <Profesor nombre="alberto" apellidos="XXXXXXXX" edad={90} casado={true} />
   )
 
 }
