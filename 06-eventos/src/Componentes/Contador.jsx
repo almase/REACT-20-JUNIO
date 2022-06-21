@@ -1,19 +1,26 @@
 import React from 'react'
-let contador=0;
+import { useState } from 'react';
 function Contador() {
+
+  const  [contador, setcontador]=useState(0);
+
+  const [valor, setvalor]=useState("alberto");
 
 
   const aumentar=(e)=>{
     console.log('has pulsado aumentar');
     console.log(e);
     console.log('Evento producido por '+e.target.type+ 'que se llama '+e.target.name);
-
+    setcontador(contador+1);
+    setvalor("adios");
+ 
   }  
 
   const disminuir=(e)=>{
     console.log('has pulsado aumentar');
     console.log(e);
     console.log('Evento producido por '+e.target.type+ 'que se llama '+e.target.name);
+    setcontador(contador-1);
   }  
 
   const cambiarcolor=(evento,color_recibido)=>
