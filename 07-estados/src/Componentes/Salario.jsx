@@ -2,7 +2,7 @@ import React from 'react'
 
 function Salario() {
 
-    let nombre="pepe";
+  let nombre="pepe";
   return (
     <div>
      <h2> Calculo de salario</h2>

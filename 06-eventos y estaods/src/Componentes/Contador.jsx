@@ -4,7 +4,7 @@ function Contador() {
 
   const  [contador, setcontador]=useState(0);
 
-  const [valor, setvalor]=useState("alberto");
+  
 
 
   const aumentar=(e)=>{
@@ -12,7 +12,7 @@ function Contador() {
     console.log(e);
     console.log('Evento producido por '+e.target.type+ 'que se llama '+e.target.name);
     setcontador(contador+1);
-    setvalor("adios");
+  
  
   }  
 
