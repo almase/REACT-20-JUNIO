@@ -1,0 +1,8 @@
+
+
+
+3 Cajas de texto con nombre y 2 apellidos  
+
+Boton que genere las iniciales en un párrafo
+
+Todo con variables de estado
