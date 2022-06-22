@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-   <Contador />
+   <Contador  valor={10} />
    </>
   )
 }

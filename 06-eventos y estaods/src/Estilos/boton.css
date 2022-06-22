@@ -1,0 +1,21 @@
+button {
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: black;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+
+.boton-normal{
+    color:blue;
+}
+
+.boton-reset{
+    color: darkred;
+}
