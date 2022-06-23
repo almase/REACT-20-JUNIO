@@ -24,7 +24,7 @@ function Post() {
                         resultado.map((item) => {
                             return (
                                 <>
-                                    <Contenido elemento={item} />
+                                    <Contenido  elemento={item} />
 
                                 </>)
 
