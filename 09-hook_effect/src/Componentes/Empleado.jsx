@@ -25,6 +25,7 @@ function Empleado() {
 
     function controlar(e) {
         setempleado({ ...empleado, [e.target.name]: e.target.value })
+        
     }
 
 
