@@ -26,6 +26,8 @@ function App() {
     <div>
       <h2>Ejmplo de HOOK</h2>
       <Empleado />
+      <br/>
+      <br/>
       <Temporizador  />
     </div>
   )
