@@ -1,0 +1,36 @@
+{
+  "empleados": [
+    {
+      "dni": 1,
+      "nombre": "Pedro",
+      "apellidos": "Ramirez",
+      "edad": 20,
+      "fecha": "2022-1-19T17:30:31.098Z",
+      "jefe": true
+    },
+    {
+     "dni": 2,
+      "nombre": "Rosa",
+      "apellidos": "García",
+      "edad": 22,
+      "fecha": "2022-1-21T17:30:31.098Z",
+      "jefe": false
+    },
+    {
+    "dni": 3,
+      "nombre": "Ramon",
+      "apellidos": "Estevezx",
+      "edad": 55,
+      "fecha": "2022-2-17T17:30:31.098Z",
+      "jefe": true
+    },
+	    {
+    "dni": 4,
+      "nombre": "xxxx",
+      "apellidos": "ppp",
+      "edad": 55,
+      "fecha": "2022-2-17T17:30:31.098Z",
+      "jefe": true
+    }
+  ]
+}

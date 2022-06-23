@@ -2,7 +2,8 @@ import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import Temporizador from './Componentes/Temporizador'
-const empleados = [{
+import Empleado from './Componentes/Empleado';
+const emples = [{
   nombre: 'Raul',
   apellidos: 'Rodriguez Garia',
   edad: 29
@@ -24,7 +25,8 @@ function App() {
   return (
     <div>
       <h2>Ejmplo de HOOK</h2>
-      <Temporizador />
+      <Empleado />
+      <Temporizador  />
     </div>
   )
 }
