@@ -15,9 +15,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+         Aprender React
         </a>
       </header>
+      <button name="aceptar">Aceptar</button>
+      <button name="cancelar">Cancelar</button>
     </div>
   );
 }
