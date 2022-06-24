@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
-import {devolverNulo} from './funciones.js'
+import {devolverNulo, iniciales} from './funciones.js'
 
 /*
 test('renders learn react link', () => {
@@ -22,3 +22,8 @@ test('Probar si algo es nulo',()=>{
   expect(nulo).toBeNull();
   
 })
+
+test('Probar iniciales', () => { 
+    const resultado=iniciales('Alberto','KKKK','RRRR');
+    expect(resultado).toBe('A.K.R.');
+ })
